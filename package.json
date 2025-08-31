@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src"
+  },
+  "dependencies": {
+    "@vue/repl": "^0.4.9",
+    "@vue/theme": "^0.1.35",
+    "dynamics.js": "^1.1.5",
+    "gsap": "^3.9.0",
+    "vitepress": "^0.21.4",
+    "vue": "^3.2.26"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.9.1"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "@algolia/autocomplete-preset-algolia": {
+        "peerDependenciesMeta": {
+          "@algolia/client-search": {
+            "optional": true
+          }
+        }
+      },
+      "@docsearch/react": {
+        "peerDependenciesMeta": {
+          "react": {
+            "optional": true
+          },
+          "react-dom": {
+            "optional": true
+          },
+          "@types/react": {
+            "optional": true
+          }
+        }
+      }
+    }
+  }
+}
